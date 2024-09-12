@@ -5,3 +5,7 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
+.border-opacity-50 {
+  border-color: rgba(0, 0, 0, 0.5); /* เปลี่ยนสีและความโปร่งใสตามต้องการ */
+}
