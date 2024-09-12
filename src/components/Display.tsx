@@ -8,14 +8,10 @@ const Display = () => {
   const displayRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
   const isAlbum = location.pathname.includes("album");
-  console.log("isAlbum", isAlbum);
 
   const albumId = isAlbum ? location.pathname.slice(-1) : "";
-  console.log(albumId);
 
   const bgColor = albumsData[Number(albumId)]?.bgColor;
-  console.log(bgColor);
-  console.log("++++", displayRef.current);
 
   useEffect(() => {
     if (displayRef.current) {
